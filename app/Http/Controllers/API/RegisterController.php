@@ -53,4 +53,9 @@ class RegisterController extends BaseController
             return $this->sendError('Unauthorised,', ['error' => 'Unauthorised']);
         }
     }
+
+    public function unautorized(Request $request): JsonResponse
+    {
+        return $this->sendError('Unauthorised,', ['error' => 'Unauthorised']);
+    }
 }
