@@ -40,7 +40,7 @@ class CategorySeeder extends Seeder
                 'name' => $c,
                 'enable' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
-                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ]);
         }
 
