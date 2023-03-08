@@ -7,6 +7,7 @@ use App\Http\Controllers\API\RegisterController;
 use App\Http\Controllers\API\CategoryController;
 use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\CategoryProductController;
+use App\Http\Controllers\API\ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,5 @@ Route::middleware('auth:api')->group(function () {
     Route::resource('categorys', CategoryController::class);
     Route::resource('products', ProductController::class);
     Route::resource('category-products', CategoryProductController::class);
+    Route::resource('images', ImageController::class);
 });

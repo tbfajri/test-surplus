@@ -100,9 +100,9 @@ class CategoryController extends BaseController
      * @return \Illuminate\Http\Response
      */
 
-     public function destroy(Category $category): JsonResponse
-     {
+    public function destroy(Category $category): JsonResponse
+    {
         $category->delete();
         return $this->sendResponse([], 'Category deleted successfully');
-     }
+    }
 }
